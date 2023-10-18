@@ -16,5 +16,11 @@ namespace ConsoleApp18
             if (speed < 10)
                 speed = 10;
         }
+        private static void DecreaseGameSpeed()
+        {
+            speed += 10;
+            if (speed > 1000)
+                speed = 1000;
+        }
     }
 }

@@ -12,7 +12,17 @@ namespace ConsoleApp18
         {
             // увеличить gameScore на 1
             gameScore++;
-
+            Console.Title = $"{gameScore}";
+        }
+        private static void DecreaseGameScore()
+        {
+            gameScore--;
+            Console.Title = $"{gameScore}";
+            if (gameScore < 0)
+            {
+                GameOver();
+                Console.WriteLine($"GameOver :(");
+            }
         }
     }
 }
